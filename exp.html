@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Hello world</title>
+</head>
+<style>
+</style>
+<script>
+
+
+//parameterized
+function sayhi(name1,name2)
+{
+alert("hello"+name1+" and" +name2)
+}
+sayhi("Ayush","Cobu");
+sayhi("Raman","Momo");
+sayhi("Handa","guri");
+sayhi("Benny","gagdu");
+
+//unparameterized
+function sayhm(){
+alert("hello world")
+}
+sayhm();
+sayhm();
+sayhm();
+sayhm();
+
+//returntype
+
+function sayhl(name1,name2)
+{
+
+return("hello"+name1+" and" +name2)
+}
+data= sayhl("Ayush","sharma");
+alert("Data:"+data);
+
+//Arguments
+
+function sayhk(){
+alert("hello world");
+}
+alert(arguments[0]);
+alert(arguments[1]);
+alert(arguments[2]);
+sayhk("Ayush","Sharma","jaiho");
+}
+
+//functiondatatype
+function sayhy(){
+alert("hello world");
+}
+alert(typeof sayhy)
+test = sayhy;
+alert(typeof test);
+test();
+}
+//Functional programming
+
+function sayhii(){
+alert("hello world");
+}
+function caller(t)
+{
+alert(typeof t);
+cller(sayhii());
+
+//Functional programming2
+
+function sayh(name){
+alert("hello "+name);
+}
+function caller(n,m)
+{
+alert(typeof n);
+n(m)
+}
+caller(sayh,"Ayush");
+
+</script>
+</body>
+</html>
