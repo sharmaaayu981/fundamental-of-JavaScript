@@ -6,7 +6,6 @@
 </style>
 <script>
 
-
 //parameterized
 function sayhi(name1,name2)
 {
@@ -40,12 +39,13 @@ alert("Data:"+data);
 
 function sayhk(){
 alert("hello world");
-}
+
 alert(arguments[0]);
 alert(arguments[1]);
 alert(arguments[2]);
-sayhk("Ayush","Sharma","jaiho");
 }
+sayhk("Ayush","Sharma","jaiho");
+
 
 //functiondatatype
 function sayhy(){
@@ -55,7 +55,7 @@ alert(typeof sayhy)
 test = sayhy;
 alert(typeof test);
 test();
-}
+
 //Functional programming
 
 function sayhii(){
@@ -78,6 +78,19 @@ n(m)
 }
 caller(sayh,"Ayush");
 
+//Inner/Outer Functions
+
+function outer(){
+alert("this is outer")
+function inner(){
+alert("this is inner")
+}
+inner();
+inner();//inside outer, allowed
+}
+outer();
+inner();//Not allowed working
+}
 </script>
 </body>
 </html>
